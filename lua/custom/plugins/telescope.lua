@@ -1,14 +1,14 @@
 local telescope = require('telescope')
 
 telescope.setup {
-defaults = { 
+-- defaults = { 
 
-    path_display = function (_, path)
+  --  path_display = function (_, path)
       -- Show only last files not entire path 
-      local tail = require('telescope.utils').path_tail(path)
-      return tail
-    end,
-  },
+   --   local tail = require('telescope.utils').path_tail(path)
+   --  return tail
+   -- end,
+--   },
 }
 
 pcall(telescope.load_extension, "fzf")
