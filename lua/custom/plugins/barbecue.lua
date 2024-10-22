@@ -5,7 +5,6 @@ return {
   version = '*',
   dependencies = {
     'SmiteshP/nvim-navic',
-    'nvim-tree/nvim-web-de:vicons', -- optional dependency
   },
   opts = {
     -- configurations go here
