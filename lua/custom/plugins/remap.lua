@@ -14,10 +14,10 @@ vim.keymap.set('x', '<leader>p', '"_dP')
 
 vim.opt.relativenumber = true
 
-return {
-  vim.keymap.set('n', '<leader>pv', vim.cmd.Ex),
-  -- Define the keymap in normal mode Tuist
-  vim.api.nvim_set_keymap('n', '<leader>xb', ':!tuist build<CR>', { noremap = true, silent = true }),
-  vim.api.nvim_set_keymap('n', '<leader>xt', ':!tuist test<CR>', { noremap = true, silent = true }),
-  vim.api.nvim_set_keymap('n', '<leader>st', ':lua FindTODOGlobally()<CR>', { noremap = true, silent = true }),
-}
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+-- Define the keymap in normal mode Tuist
+vim.api.nvim_set_keymap('n', '<leader>xb', ':!tuist build<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>xt', ':!tuist test<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>st', ':lua FindTODOGlobally()<CR>', { noremap = true, silent = true })
+
+return {}
