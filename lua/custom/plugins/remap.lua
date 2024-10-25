@@ -6,6 +6,21 @@ end
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
+-- Moving selected code up/down
+vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+-- While jumping middle page, coursor is in the middle of screen
+vim.keymap.set('n', '<C-d>', '<C-d>zz')
+vim.keymap.set('n', '<C-u>', '<C-u>zz')
+
+-- While searching, courson is always in the middle of screen
+vim.keymap.set('n', 'n', 'nzzzv')
+vim.keymap.set('n', 'N', 'Nzzzv')
+--
+-- Start with replace higlighted word
+vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
 -- Never has less than x lines below once scrolling
 vim.opt.scrolloff = 8
 
