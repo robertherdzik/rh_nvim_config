@@ -28,13 +28,13 @@ vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><
 
 -- Never has less than x lines below once scrolling
 vim.opt.scrolloff = 8
+vim.opt.relativenumber = true
 
 -- Puts paste action into void register then we can hit `p` and dont lose what we had in register
 vim.keymap.set('x', '<leader>p', '"_dP')
 
-vim.opt.relativenumber = true
-
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+
 -- Define the keymap in normal mode Tuist
 vim.api.nvim_set_keymap('n', '<leader>xb', ':!tuist build<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>xt', ':!tuist test<CR>', { noremap = true, silent = true })
