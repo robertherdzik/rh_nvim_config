@@ -12,16 +12,16 @@ vim.cmd [[
   "highlight FloatermBorder guibg=#282a36 guifg=#6272a4
 
   " Gruvbox theme colors
-  "highlight Floaterm guibg=#282828 guifg=#ebdbb2
-  "highlight FloatermBorder guibg=#282828 guifg=#928374
+  highlight Floaterm guibg=#282828 guifg=#ebdbb2
+  highlight FloatermBorder guibg=#282828 guifg=#928374
 
   " Nord theme colors
-  "highlight Floaterm guibg=#2E3440 guifg=#D8DEE9
-  "highlight FloatermBorder guibg=#2E3440 guifg=#81A1C1
+ " highlight Floaterm guibg=#2E3440 guifg=#D8DEE9
+ "highlight FloatermBorder guibg=#2E3440 guifg=#81A1C1
 
   " One Dark theme colors
-  highlight Floaterm guibg=#282c34 guifg=#abb2bf
-  highlight FloatermBorder guibg=#282c34 guifg=#61afef
+  "highlight Floaterm guibg=#282c34 guifg=#abb2bf
+  "highlight FloatermBorder guibg=#282c34 guifg=#61afef
 
   " Tokyo Night theme colors
   "highlight Floaterm guibg=#1f2335 guifg=#c0caf5
