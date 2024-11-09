@@ -21,7 +21,7 @@ vim.keymap.set('n', 'N', 'Nzzzv')
 -- Start lazy git
 vim.keymap.set('n', '<leader>g', function()
   vim.cmd 'FloatermNew --name=lazygit lazygit'
-end)
+end, { desc = 'Open git' })
 
 -- Start with replace higlighted word
 vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
@@ -33,6 +33,10 @@ vim.opt.relativenumber = true
 -- Puts paste action into void register then we can hit `p` and dont lose what we had in register
 vim.keymap.set('x', '<leader>p', '"_dP')
 
+-- // TODO []: Keep or remove
+vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+
+-- Show files in tree
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
 -- Define the keymap in normal mode Tuist
