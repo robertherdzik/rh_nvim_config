@@ -37,7 +37,9 @@ vim.keymap.set('x', '<leader>p', '"_dP')
 vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
 
 -- Show files in tree
-vim.keymap.set('n', '<leader>pv', vim.cmd.Ex)
+vim.keymap.set('n', '<leader>ff', ':NvimTreeFindFile<CR>', { silent = true, noremap = true, desc = 'Find file [NvimTree]' })
+vim.keymap.set('n', '<leader>fl', ':NvimTreeResize 55<CR>', { silent = true, noremap = true, desc = 'Big tree [NvimTree]' })
+vim.keymap.set('n', '<leader>fs', ':NvimTreeResize 30<CR>', { silent = true, noremap = true, desc = 'Small tree [NvimTree]' })
 
 -- Define the keymap in normal mode Tuist
 vim.api.nvim_set_keymap('n', '<leader>xb', ':!tuist build<CR>', { noremap = true, silent = true })
