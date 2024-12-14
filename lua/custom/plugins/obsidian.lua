@@ -1,3 +1,6 @@
+-- If you wish to use the formatting concealment features, you will need to have conceallevel set to a value that allows it (either 1 or 2), for example: set conceallevel=1 in viml or vim.opt.conceallevel = 1 in a lua config.
+vim.opt.conceallevel = 1
+
 return {
   'epwalsh/obsidian.nvim',
   version = '*', -- recommended, use latest release instead of latest commit
@@ -21,7 +24,7 @@ return {
     workspaces = {
       {
         name = 'personal',
-        path = '~/Users/robertherdzik/Library/Mobile Documents/iCloud~md~obsidian/Documents/master',
+        path = '/Users/robertherdzik/Library/Mobile Documents/iCloud~md~obsidian/Documents/master',
       },
     },
     -- see below for full list of options 👇
